@@ -1,0 +1,6 @@
+FROM nginx
+RUN rm -f /usr/share/nginx/index.html
+RUN rm -f /etc/nginx/conif.d/default.conf
+RUN rm -f /etc/nginx/nginx.conf
+COPY expense.conf /etc/nginx/nginx.conf
+COPY code /usr/share/nginx/html/
