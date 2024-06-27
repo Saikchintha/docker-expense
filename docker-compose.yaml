@@ -1,6 +1,6 @@
 name: expense
 networks:
-  default
+  default:
     name: expense
 services:
   mysql:
